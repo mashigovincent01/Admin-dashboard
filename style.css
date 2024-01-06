@@ -13,7 +13,8 @@
     gap: 20px;
 }
 .branding img:hover{
-    transform: rotate(180deg);
+    transform: rotate(360deg);
+    transition: transform 1s ease-in-out;
 }
 .nav-item{
     display: flex;
@@ -35,8 +36,7 @@
     width: 20px;
 }
 .body-content{
-    background-color: green;
-    height: 100vh;
+    /* height: 100vh; */
     display: grid;
     /* grid-template-areas: 'sidebar header header header header header header header header header header header'
                         'sidebar main main main main main main main main main main main'
@@ -126,6 +126,12 @@ button{
     height: 60px;
     border-radius: 100%;
     margin: auto;
+    /* transform: rotate(90deg); */
+}
+
+.bottom-left-header img:hover{
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
 }
 .bottom-left-header h2{
     grid-area: h21;
@@ -156,7 +162,7 @@ button{
 
 .main{
     /* grid-area: main; */
-    background-color: #B6C4B6;
+    background-color: #EEF0E5;
     
 }
 .sidebar{
@@ -180,7 +186,8 @@ button{
     background-color: white;
     border-left: solid orange 5px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 15px;
+    padding-bottom: 30px;
     
 }
 
@@ -199,7 +206,12 @@ button{
     border-radius: 10px;
     padding: 10px;
 }
-
+.options{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px
+}
 .main{
     display: grid;
     gap: 10px;
