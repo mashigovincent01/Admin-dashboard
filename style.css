@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+}
+
+.body-content{
+    background-color: green;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'sidebar header header header header'
+                        'sidebar main main main main'
+                        'sidebar main main main main';
+}
+.main{
+    grid-area: main;
+    background-color: #B6C4B6;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: #1D2B53;
+}
+
+.header{
+    background-color: #F5F7F8;
+    grid-area: header;
+}
